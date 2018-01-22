@@ -2,7 +2,7 @@
 
 
 
-define('catvsdog-result-app-front/app', ['exports', 'catvsdog-result-app-front/resolver', 'ember-load-initializers', 'catvsdog-result-app-front/config/environment'], function (exports, _resolver, _emberLoadInitializers, _environment) {
+define('catvsdog-ember-app/app', ['exports', 'catvsdog-ember-app/resolver', 'ember-load-initializers', 'catvsdog-ember-app/config/environment'], function (exports, _resolver, _emberLoadInitializers, _environment) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -20,7 +20,7 @@ define('catvsdog-result-app-front/app', ['exports', 'catvsdog-result-app-front/r
 
   exports.default = App;
 });
-define('catvsdog-result-app-front/components/welcome-page', ['exports', 'ember-welcome-page/components/welcome-page'], function (exports, _welcomePage) {
+define('catvsdog-ember-app/components/welcome-page', ['exports', 'ember-welcome-page/components/welcome-page'], function (exports, _welcomePage) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -33,7 +33,7 @@ define('catvsdog-result-app-front/components/welcome-page', ['exports', 'ember-w
     }
   });
 });
-define('catvsdog-result-app-front/helpers/app-version', ['exports', 'catvsdog-result-app-front/config/environment', 'ember-cli-app-version/utils/regexp'], function (exports, _environment, _regexp) {
+define('catvsdog-ember-app/helpers/app-version', ['exports', 'catvsdog-ember-app/config/environment', 'ember-cli-app-version/utils/regexp'], function (exports, _environment, _regexp) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -57,7 +57,7 @@ define('catvsdog-result-app-front/helpers/app-version', ['exports', 'catvsdog-re
 
   exports.default = Ember.Helper.helper(appVersion);
 });
-define('catvsdog-result-app-front/helpers/pluralize', ['exports', 'ember-inflector/lib/helpers/pluralize'], function (exports, _pluralize) {
+define('catvsdog-ember-app/helpers/pluralize', ['exports', 'ember-inflector/lib/helpers/pluralize'], function (exports, _pluralize) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -65,7 +65,7 @@ define('catvsdog-result-app-front/helpers/pluralize', ['exports', 'ember-inflect
   });
   exports.default = _pluralize.default;
 });
-define('catvsdog-result-app-front/helpers/singularize', ['exports', 'ember-inflector/lib/helpers/singularize'], function (exports, _singularize) {
+define('catvsdog-ember-app/helpers/singularize', ['exports', 'ember-inflector/lib/helpers/singularize'], function (exports, _singularize) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -73,7 +73,7 @@ define('catvsdog-result-app-front/helpers/singularize', ['exports', 'ember-infle
   });
   exports.default = _singularize.default;
 });
-define('catvsdog-result-app-front/initializers/app-version', ['exports', 'ember-cli-app-version/initializer-factory', 'catvsdog-result-app-front/config/environment'], function (exports, _initializerFactory, _environment) {
+define('catvsdog-ember-app/initializers/app-version', ['exports', 'ember-cli-app-version/initializer-factory', 'catvsdog-ember-app/config/environment'], function (exports, _initializerFactory, _environment) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -93,7 +93,7 @@ define('catvsdog-result-app-front/initializers/app-version', ['exports', 'ember-
     initialize: (0, _initializerFactory.default)(name, version)
   };
 });
-define('catvsdog-result-app-front/initializers/container-debug-adapter', ['exports', 'ember-resolver/resolvers/classic/container-debug-adapter'], function (exports, _containerDebugAdapter) {
+define('catvsdog-ember-app/initializers/container-debug-adapter', ['exports', 'ember-resolver/resolvers/classic/container-debug-adapter'], function (exports, _containerDebugAdapter) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -110,7 +110,7 @@ define('catvsdog-result-app-front/initializers/container-debug-adapter', ['expor
     }
   };
 });
-define('catvsdog-result-app-front/initializers/data-adapter', ['exports'], function (exports) {
+define('catvsdog-ember-app/initializers/data-adapter', ['exports'], function (exports) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -122,7 +122,7 @@ define('catvsdog-result-app-front/initializers/data-adapter', ['exports'], funct
     initialize: function initialize() {}
   };
 });
-define('catvsdog-result-app-front/initializers/ember-data', ['exports', 'ember-data/setup-container', 'ember-data'], function (exports, _setupContainer) {
+define('catvsdog-ember-app/initializers/ember-data', ['exports', 'ember-data/setup-container', 'ember-data'], function (exports, _setupContainer) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -133,7 +133,7 @@ define('catvsdog-result-app-front/initializers/ember-data', ['exports', 'ember-d
     initialize: _setupContainer.default
   };
 });
-define('catvsdog-result-app-front/initializers/export-application-global', ['exports', 'catvsdog-result-app-front/config/environment'], function (exports, _environment) {
+define('catvsdog-ember-app/initializers/export-application-global', ['exports', 'catvsdog-ember-app/config/environment'], function (exports, _environment) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -183,7 +183,7 @@ define('catvsdog-result-app-front/initializers/export-application-global', ['exp
     initialize: initialize
   };
 });
-define('catvsdog-result-app-front/initializers/injectStore', ['exports'], function (exports) {
+define('catvsdog-ember-app/initializers/injectStore', ['exports'], function (exports) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -195,7 +195,7 @@ define('catvsdog-result-app-front/initializers/injectStore', ['exports'], functi
     initialize: function initialize() {}
   };
 });
-define('catvsdog-result-app-front/initializers/store', ['exports'], function (exports) {
+define('catvsdog-ember-app/initializers/store', ['exports'], function (exports) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -207,7 +207,7 @@ define('catvsdog-result-app-front/initializers/store', ['exports'], function (ex
     initialize: function initialize() {}
   };
 });
-define('catvsdog-result-app-front/initializers/transforms', ['exports'], function (exports) {
+define('catvsdog-ember-app/initializers/transforms', ['exports'], function (exports) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -219,7 +219,7 @@ define('catvsdog-result-app-front/initializers/transforms', ['exports'], functio
     initialize: function initialize() {}
   };
 });
-define("catvsdog-result-app-front/instance-initializers/ember-data", ["exports", "ember-data/initialize-store-service"], function (exports, _initializeStoreService) {
+define("catvsdog-ember-app/instance-initializers/ember-data", ["exports", "ember-data/initialize-store-service"], function (exports, _initializeStoreService) {
   "use strict";
 
   Object.defineProperty(exports, "__esModule", {
@@ -230,7 +230,7 @@ define("catvsdog-result-app-front/instance-initializers/ember-data", ["exports",
     initialize: _initializeStoreService.default
   };
 });
-define('catvsdog-result-app-front/resolver', ['exports', 'ember-resolver'], function (exports, _emberResolver) {
+define('catvsdog-ember-app/resolver', ['exports', 'ember-resolver'], function (exports, _emberResolver) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -238,7 +238,7 @@ define('catvsdog-result-app-front/resolver', ['exports', 'ember-resolver'], func
   });
   exports.default = _emberResolver.default;
 });
-define('catvsdog-result-app-front/router', ['exports', 'catvsdog-result-app-front/config/environment'], function (exports, _environment) {
+define('catvsdog-ember-app/router', ['exports', 'catvsdog-ember-app/config/environment'], function (exports, _environment) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -255,7 +255,7 @@ define('catvsdog-result-app-front/router', ['exports', 'catvsdog-result-app-fron
 
   exports.default = Router;
 });
-define('catvsdog-result-app-front/services/ajax', ['exports', 'ember-ajax/services/ajax'], function (exports, _ajax) {
+define('catvsdog-ember-app/services/ajax', ['exports', 'ember-ajax/services/ajax'], function (exports, _ajax) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -268,18 +268,18 @@ define('catvsdog-result-app-front/services/ajax', ['exports', 'ember-ajax/servic
     }
   });
 });
-define("catvsdog-result-app-front/templates/application", ["exports"], function (exports) {
+define("catvsdog-ember-app/templates/application", ["exports"], function (exports) {
   "use strict";
 
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.default = Ember.HTMLBars.template({ "id": "QJ7vK9OX", "block": "{\"symbols\":[],\"statements\":[[1,[18,\"welcome-page\"],false],[0,\"\\n\"],[0,\"\\n\"],[1,[18,\"outlet\"],false]],\"hasEval\":false}", "meta": { "moduleName": "catvsdog-result-app-front/templates/application.hbs" } });
+  exports.default = Ember.HTMLBars.template({ "id": "QR0GLGgY", "block": "{\"symbols\":[],\"statements\":[[1,[18,\"welcome-page\"],false],[0,\"\\n\"],[0,\"\\n\"],[1,[18,\"outlet\"],false]],\"hasEval\":false}", "meta": { "moduleName": "catvsdog-ember-app/templates/application.hbs" } });
 });
 
 
-define('catvsdog-result-app-front/config/environment', [], function() {
-  var prefix = 'catvsdog-result-app-front';
+define('catvsdog-ember-app/config/environment', [], function() {
+  var prefix = 'catvsdog-ember-app';
 try {
   var metaName = prefix + '/config/environment';
   var rawConfig = document.querySelector('meta[name="' + metaName + '"]').getAttribute('content');
@@ -298,6 +298,6 @@ catch(err) {
 });
 
 if (!runningTests) {
-  require("catvsdog-result-app-front/app")["default"].create({"name":"catvsdog-result-app-front","version":"0.0.0+949e3133"});
+  require("catvsdog-ember-app/app")["default"].create({"name":"catvsdog-ember-app","version":"0.0.0+55f77027"});
 }
-//# sourceMappingURL=catvsdog-result-app-front.map
+//# sourceMappingURL=catvsdog-ember-app.map

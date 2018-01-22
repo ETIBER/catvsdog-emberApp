@@ -1,6 +1,6 @@
 'use strict';
 
-define('catvsdog-result-app-front/tests/app.lint-test', [], function () {
+define('catvsdog-ember-app/tests/app.lint-test', [], function () {
   'use strict';
 
   QUnit.module('ESLint | app');
@@ -20,7 +20,7 @@ define('catvsdog-result-app-front/tests/app.lint-test', [], function () {
     assert.ok(true, 'router.js should pass ESLint\n\n');
   });
 });
-define('catvsdog-result-app-front/tests/helpers/destroy-app', ['exports'], function (exports) {
+define('catvsdog-ember-app/tests/helpers/destroy-app', ['exports'], function (exports) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -31,7 +31,7 @@ define('catvsdog-result-app-front/tests/helpers/destroy-app', ['exports'], funct
     Ember.run(application, 'destroy');
   }
 });
-define('catvsdog-result-app-front/tests/helpers/module-for-acceptance', ['exports', 'qunit', 'catvsdog-result-app-front/tests/helpers/start-app', 'catvsdog-result-app-front/tests/helpers/destroy-app'], function (exports, _qunit, _startApp, _destroyApp) {
+define('catvsdog-ember-app/tests/helpers/module-for-acceptance', ['exports', 'qunit', 'catvsdog-ember-app/tests/helpers/start-app', 'catvsdog-ember-app/tests/helpers/destroy-app'], function (exports, _qunit, _startApp, _destroyApp) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -60,7 +60,7 @@ define('catvsdog-result-app-front/tests/helpers/module-for-acceptance', ['export
     });
   };
 });
-define('catvsdog-result-app-front/tests/helpers/start-app', ['exports', 'catvsdog-result-app-front/app', 'catvsdog-result-app-front/config/environment'], function (exports, _app, _environment) {
+define('catvsdog-ember-app/tests/helpers/start-app', ['exports', 'catvsdog-ember-app/app', 'catvsdog-ember-app/config/environment'], function (exports, _app, _environment) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -80,14 +80,14 @@ define('catvsdog-result-app-front/tests/helpers/start-app', ['exports', 'catvsdo
     });
   }
 });
-define('catvsdog-result-app-front/tests/test-helper', ['catvsdog-result-app-front/app', 'catvsdog-result-app-front/config/environment', '@ember/test-helpers', 'ember-qunit'], function (_app, _environment, _testHelpers, _emberQunit) {
+define('catvsdog-ember-app/tests/test-helper', ['catvsdog-ember-app/app', 'catvsdog-ember-app/config/environment', '@ember/test-helpers', 'ember-qunit'], function (_app, _environment, _testHelpers, _emberQunit) {
   'use strict';
 
   (0, _testHelpers.setApplication)(_app.default.create(_environment.default.APP));
 
   (0, _emberQunit.start)();
 });
-define('catvsdog-result-app-front/tests/tests.lint-test', [], function () {
+define('catvsdog-ember-app/tests/tests.lint-test', [], function () {
   'use strict';
 
   QUnit.module('ESLint | tests');
@@ -112,6 +112,6 @@ define('catvsdog-result-app-front/tests/tests.lint-test', [], function () {
     assert.ok(true, 'test-helper.js should pass ESLint\n\n');
   });
 });
-require('catvsdog-result-app-front/tests/test-helper');
+require('catvsdog-ember-app/tests/test-helper');
 EmberENV.TESTS_FILE_LOADED = true;
 //# sourceMappingURL=tests.map

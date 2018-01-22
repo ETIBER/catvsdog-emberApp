@@ -1,8 +1,8 @@
 {
-  "name": "catvsdog-result-app-front",
+  "name": "catvsdog-ember-app",
   "version": "0.0.0",
   "private": true,
-  "description": "Small description for catvsdog-result-app-front goes here",
+  "description": "Small description for catvsdog-ember-app goes here",
   "license": "MIT",
   "author": "",
   "directories": {

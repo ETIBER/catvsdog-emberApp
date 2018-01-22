@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   let ENV = {
-    modulePrefix: 'catvsdog-result-app-front',
+    modulePrefix: 'catvsdog-ember-app',
     environment,
     rootURL: '/',
     locationType: 'auto',
