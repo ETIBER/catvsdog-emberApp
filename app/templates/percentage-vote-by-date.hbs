@@ -1,0 +1,18 @@
+<h2>Percentage vote by date</h2>
+<label>
+  Date:
+  {{pikaday-input value=model.date format='YYYY-MM-DD' onSelection=(action 'dateSelected') }}
+</label>
+
+{{#if model.percentage.cat}}
+  <ul>
+    <li>cat: {{model.percentage.cat}}</li>
+    <li>dog: {{model.percentage.dog}}</li>
+  </ul>
+{{else}}
+  <p>No result at this date</p>
+{{/if}}
+
+
+
+{{outlet}}
