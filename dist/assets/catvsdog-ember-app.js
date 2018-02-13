@@ -743,6 +743,6 @@ catch(err) {
 });
 
 if (!runningTests) {
-  require("catvsdog-ember-app/app")["default"].create({"name":"catvsdog-ember-app","version":"0.0.0+abf29a34"});
+  require("catvsdog-ember-app/app")["default"].create({"name":"catvsdog-ember-app","version":"0.0.0+1bbbe310"});
 }
 //# sourceMappingURL=catvsdog-ember-app.map
