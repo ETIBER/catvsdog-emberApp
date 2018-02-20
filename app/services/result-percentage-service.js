@@ -1,11 +1,10 @@
 import { inject as service } from '@ember/service'
 import Service from '@ember/service';
-import ENV from 'catvsdog-ember-app/config/environment';
 import Ember from 'ember';
 
-const API_HOST = ENV.API_HOST || "http://localhost"
-const API_PORT = ENV.API_PORT || "9000"
-const API_ROUTE = ENV.API_ROUTE || "/api/v1"
+const API_HOST = process.env.API_HOST || "http://localhost"
+const API_PORT = process.env.API_PORT || "9000"
+const API_ROUTE = process.env.API_ROUTE || "/api/v1"
 
 export default Service.extend({
   fetch: service(),
