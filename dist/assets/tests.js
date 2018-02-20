@@ -464,9 +464,9 @@ define('catvsdog-ember-app/tests/unit/services/fetch-test', ['ember-qunit'], fun
 define('catvsdog-ember-app/tests/unit/services/result-percentage-service-test', ['ember-qunit', 'catvsdog-ember-app/config/environment', 'ember-sinon-qunit/test-support/test', 'catvsdog-ember-app/tests/helpers/inject-mock'], function (_emberQunit, _environment, _test, _injectMock) {
   'use strict';
 
-  var API_HOST = _environment.default.API_HOST || "http://localhost";
-  var API_PORT = _environment.default.API_PORT || "9000";
-  var API_ROUTE = _environment.default.API_ROUTE || "/api/v1";
+  var API_HOST = _environment.default.API_HOST;
+  var API_PORT = _environment.default.API_PORT;
+  var API_ROUTE = _environment.default.API_ROUTE;
 
   (0, _emberQunit.moduleFor)('service:result-percentage-service', 'Unit | Service | result percentage service', {
     beforeEach: function beforeEach() {

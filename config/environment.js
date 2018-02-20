@@ -20,7 +20,10 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    }
+    },
+    API_HOST: process.env.API_HOST || "http://localhost",
+    API_PORT: process.env.API_PORT || "9000",
+    API_ROUTE: process.env.API_ROUTE || "/api/v1"
   };
 
   if (environment === 'development') {

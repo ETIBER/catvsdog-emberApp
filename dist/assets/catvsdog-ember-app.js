@@ -671,9 +671,9 @@ define('catvsdog-ember-app/services/result-percentage-service', ['exports', 'cat
   });
 
 
-  var API_HOST = _environment.default.API_HOST || "http://localhost";
-  var API_PORT = _environment.default.API_PORT || "9000";
-  var API_ROUTE = _environment.default.API_ROUTE || "/api/v1";
+  var API_HOST = _environment.default.API_HOST;
+  var API_PORT = _environment.default.API_PORT;
+  var API_ROUTE = _environment.default.API_ROUTE;
 
   exports.default = Ember.Service.extend({
     fetch: Ember.inject.service(),
@@ -746,6 +746,6 @@ catch(err) {
 });
 
 if (!runningTests) {
-  require("catvsdog-ember-app/app")["default"].create({"LOG_RESOLVER":true,"LOG_ACTIVE_GENERATION":true,"LOG_TRANSITIONS":true,"LOG_TRANSITIONS_INTERNAL":true,"LOG_VIEW_LOOKUPS":true,"name":"catvsdog-ember-app","version":"0.0.0+c91d9a16"});
+  require("catvsdog-ember-app/app")["default"].create({"LOG_RESOLVER":true,"LOG_ACTIVE_GENERATION":true,"LOG_TRANSITIONS":true,"LOG_TRANSITIONS_INTERNAL":true,"LOG_VIEW_LOOKUPS":true,"name":"catvsdog-ember-app","version":"0.0.0+10fd87bf"});
 }
 //# sourceMappingURL=catvsdog-ember-app.map
