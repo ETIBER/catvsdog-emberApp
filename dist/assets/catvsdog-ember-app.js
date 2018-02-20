@@ -679,6 +679,9 @@ define('catvsdog-ember-app/services/result-percentage-service', ['exports', 'cat
     fetch: Ember.inject.service(),
     getPercentageVote: function getPercentageVote(date) {
       var query = API_HOST + ':' + API_PORT + API_ROUTE + '/vote-percentages?date=' + date;
+      Ember.Logger.log({
+        message: 'getPercentageVote on ' + query
+      });
       return this.get('fetch').fetch(query).then(function (response) {
         var jsonResponse = {};
         if (response.status == 200) {
@@ -743,6 +746,6 @@ catch(err) {
 });
 
 if (!runningTests) {
-  require("catvsdog-ember-app/app")["default"].create({"name":"catvsdog-ember-app","version":"0.0.0+abf29a34"});
+  require("catvsdog-ember-app/app")["default"].create({"LOG_RESOLVER":true,"LOG_ACTIVE_GENERATION":true,"LOG_TRANSITIONS":true,"LOG_TRANSITIONS_INTERNAL":true,"LOG_VIEW_LOOKUPS":true,"name":"catvsdog-ember-app","version":"0.0.0+1bbbe310"});
 }
 //# sourceMappingURL=catvsdog-ember-app.map
