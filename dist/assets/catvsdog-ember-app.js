@@ -746,6 +746,6 @@ catch(err) {
 });
 
 if (!runningTests) {
-  require("catvsdog-ember-app/app")["default"].create({"LOG_RESOLVER":true,"LOG_ACTIVE_GENERATION":true,"LOG_TRANSITIONS":true,"LOG_TRANSITIONS_INTERNAL":true,"LOG_VIEW_LOOKUPS":true,"name":"catvsdog-ember-app","version":"0.0.0+1bbbe310"});
+  require("catvsdog-ember-app/app")["default"].create({"LOG_RESOLVER":true,"LOG_ACTIVE_GENERATION":true,"LOG_TRANSITIONS":true,"LOG_TRANSITIONS_INTERNAL":true,"LOG_VIEW_LOOKUPS":true,"name":"catvsdog-ember-app","version":"0.0.0+c91d9a16"});
 }
 //# sourceMappingURL=catvsdog-ember-app.map
