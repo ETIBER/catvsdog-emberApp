@@ -3,9 +3,9 @@ import Service from '@ember/service';
 import ENV from 'catvsdog-ember-app/config/environment';
 import Ember from 'ember';
 
-const API_HOST = ENV.API_HOST
-const API_PORT = ENV.API_PORT
-const API_ROUTE = ENV.API_ROUTE
+const API_HOST = ENV.APP.API_HOST
+const API_PORT = ENV.APP.API_PORT
+const API_ROUTE = ENV.APP.API_ROUTE
 
 export default Service.extend({
   fetch: service(),

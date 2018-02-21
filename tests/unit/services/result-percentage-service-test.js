@@ -3,9 +3,9 @@ import ENV from 'catvsdog-ember-app/config/environment'
 import test from 'ember-sinon-qunit/test-support/test'
 import { injectMock } from '../../helpers/inject-mock'
 
-const API_HOST = ENV.API_HOST 
-const API_PORT = ENV.API_PORT 
-const API_ROUTE = ENV.API_ROUTE 
+const API_HOST = ENV.APP.API_HOST 
+const API_PORT = ENV.APP.API_PORT 
+const API_ROUTE = ENV.APP.API_ROUTE 
 
 
 

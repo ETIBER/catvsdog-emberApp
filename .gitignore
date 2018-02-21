@@ -56,7 +56,11 @@ typings/
 
 # dotenv environment variables file
 .env
+setenv.sh
 
 #temporary file
 *.tmp
+
+#ember file
+dist/
 
